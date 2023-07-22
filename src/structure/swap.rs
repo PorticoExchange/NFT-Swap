@@ -1,3 +1,6 @@
+use rgb:{Contract, Schema, RGB21};
+use lightning:{OpenChannel,CloseChannel};
+
 struct NftSwap {
     nft_metadata: String,  // Replace with your actual NFT metadata type
     rgb21_data: String,    // Replace with your actual RGB21 data type
