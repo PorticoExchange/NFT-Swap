@@ -1,5 +1,7 @@
-use rgb:{Contract, Schema, RGB21};
-use lightning:{OpenChannel,CloseChannel};
+use bitcoin::util::hash::BitcoinHash;
+use rgb::{self, Infugible::Amount, schema::constants::*, schema::scripts::*, util::Value};
+use secp256k1::rand::rngs::OsRng;
+use std::str::FromStr;
 
 struct NftSwap {
     nft_metadata: String,  // Replace with your actual NFT metadata type
